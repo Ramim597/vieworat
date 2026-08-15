@@ -26,7 +26,7 @@ function Home() {
 
           {/* buttons */}
           <div className="mt-20 flex items-center justify-between">
-            <button className="w-40 h-9 cursor-pointer bg-primary flex items-center rounded justify-center text-white">
+            <button className="primary-button w-40 h-9">
               Start Free Analysis
             </button>
 
@@ -38,7 +38,7 @@ function Home() {
             </a>
           </div>
         </div>
-      </div> 
+      </div>
     </>
   );
 }

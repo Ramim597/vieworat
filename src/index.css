@@ -6,3 +6,11 @@
   --color-primary: #ff2d2d;
   --font-primary: "Inter", sans-serif;
 }
+
+.primary-button {
+  @apply cursor-pointer bg-primary flex items-center rounded justify-center text-white
+}
+
+.card {
+  @apply w-28 h-8 border rounded border-gray-600 flex items-center justify-center gap-1.5 cursor-pointer
+}
