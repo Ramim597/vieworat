@@ -12,7 +12,7 @@ function YouTubeMoneyCalculator() {
       {/* toll bar */}
       <div className="flex items-center justify-center flex-col"> 
           <h1 className="font-bold text-5xl mt-3">YouTube Money <span className="text-primary">Calculator</span></h1>
-            <div className="flex gap-1.5 mt-6">
+            <div className="flex gap-1.5 mt-6 border-zinc-700 p-3 border rounded-md">
               <div className="card"><FaYoutube size={20} color="#FF0000" /> <p>YouTube</p></div>
               <div className="card"><SiYoutubeshorts size={20} color="#FF0000" /> <p>YouTube</p></div>
               <div className="card"><FaInstagram size={20} color="#E4405F" /> <p>YouTube</p></div>
