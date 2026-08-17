@@ -28,7 +28,7 @@ function PricingCard() {
                 /month
               </span>
             </h2>
-            <button className="w-full bg-gray-100 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20 text-gray-900 dark:text-white font-medium py-3 rounded-xl transition-colors duration-300 mt-6 cursor-pointer">
+            <button className="w-full border border-primary bg-gray-100 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20 text-gray-900 dark:text-white font-medium py-3 rounded-xl transition-colors duration-300 mt-6 cursor-pointer">
               {plan.button}
             </button>
 
