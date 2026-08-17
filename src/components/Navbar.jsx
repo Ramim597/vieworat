@@ -14,7 +14,7 @@ function Navbar() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="relative flex min-h-[64px] items-center bg-[#050505] px-5 py-2.5 text-white sm:min-h-[68px] sm:px-[clamp(24px,3vw,48px)] sm:py-3">
+    <header className="fixed w-full flex min-h-[64px] items-center bg-[#050505] px-5 py-2.5 text-white sm:min-h-[68px] sm:px-[clamp(24px,3vw,48px)] sm:py-3">
       <a className="flex shrink-0 items-center" href="/" aria-label="Vieworat home">
         <img className="block w-[120px] sm:w-[138px]" src={logo} alt="Vieworat" />
       </a>

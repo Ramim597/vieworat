@@ -4,14 +4,16 @@ import Home from "./pages/Home";
 import YouTubeMoneyCalculator from "./pages/YouTubeMoneyCalculator";
 import PricingCard from "./pages/PricingCard";
 import Test from "./pages/Test";
+// import SmarterSection from "./pages/SmarterSection";
 
 function App() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#050505] text-[#f8f8f8]">
       <Navbar />
-
+      {/* <SmarterSection /> */}
       <Routes>
         <Route path="/" element={<Home />} />
+
         <Route
           path="youtube-money-calculator"
           element={<YouTubeMoneyCalculator />}

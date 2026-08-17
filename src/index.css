@@ -14,3 +14,15 @@
 .card {
   @apply w-28 h-8 border rounded border-gray-600 flex items-center justify-center gap-1.5 cursor-pointer
 }
+
+/* supported platform */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
