@@ -3,7 +3,7 @@ import logo from "../assets/logo.jpg";
 
 const navigationLinks = [
   { href: "#insights", label: "AI Creator Insights" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "PricingCard", label: "Pricing" },
   { href: "#community", label: "Community" },
 ];
 

@@ -2,8 +2,6 @@ import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
 import { Eye, Globe, LayoutGrid, ArrowRight, ChevronDown , DollarSign} from "lucide-react";
 import { SiYoutubeshorts } from "react-icons/si";
 
-
-
 function YouTubeMoneyCalculator() {
   return (
     <>
