@@ -11,7 +11,7 @@ The project is currently **under active development**. Some features are already
 ## Preview
 
 ![vieworat Preview]!
-[alt text](./src/assets/vieworattPreview.png)
+[alt text](src/assets/VieworatPreview.png)
 
 ---
 
@@ -125,3 +125,6 @@ vieworat/
 ├── package.json
 └── README.md
 ```
+
+
+[def]: ./src/assets/vieworattPreview.png
