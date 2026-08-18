@@ -10,11 +10,11 @@ function YouTubeMoneyCalculator() {
       {/* toll bar */}
       <div className="flex items-center justify-center flex-col"> 
           <h1 className="font-bold text-5xl mt-3">YouTube Money <span className="text-primary">Calculator</span></h1>
-            <div className="flex gap-1.5 mt-6 border-zinc-700 p-3 border rounded-md">
-              <div className="card"><FaYoutube size={20} color="#FF0000" /> <p>YouTube</p></div>
-              <div className="card"><SiYoutubeshorts size={20} color="#FF0000" /> <p>YouTube</p></div>
-              <div className="card"><FaInstagram size={20} color="#E4405F" /> <p>YouTube</p></div>
-              <div className="card"><FaFacebook size={20} color="#1877F2" /> <p>YouTube</p></div>
+            <div className="flex gap-1.5 mt-6 border-zinc-700 p-3 border rounded-md group">
+              <div className="card group card hover:bg-primary/20 transition-colors duration-300"><FaYoutube size={20} color="#FF0000"/> <p>YouTube</p></div>
+              <div className="card group card hover:bg-primary/20 transition-colors duration-300"><SiYoutubeshorts size={20} color="#FF0000" /> <p>YT Shorts</p></div>
+              <div className="card group card hover:bg-primary/20 transition-colors duration-300"><FaInstagram size={20} color="#E4405F" /> <p>Instagram</p></div>
+              <div className="card group card hover:bg-primary/20 transition-colors duration-300"><FaFacebook size={20} color="#1877F2" /> <p>Facebook</p></div>
           </div>
       </div>
      
@@ -25,22 +25,24 @@ function YouTubeMoneyCalculator() {
       <div className="flex items-center flex-col gap-4">
          <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
           <div>
-            <div className="flex items-center gap-1"><FaYoutube size={18} color="#FF0000"/> <p className="text-zinc-400 text-sm">TOTAL YOUTUBE LONG VIEWS</p></div>   
-            <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700"><input  type="text" className="border-primary outline-0 text-sm"  placeholder="100,000"/> <Eye size={18} /> </div>
+            <div className="flex items-center gap-1"><FaYoutube size={18} color="#FF0000"/> <p className="text-zinc-400 text-sm">TOTAL YOUTUBE LONG VIEWS</p>
+            </div>   
+            <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700"><input  type="text" className="border-primary outline-0 text-sm p-2"  placeholder="100,000"/> <Eye size={18} /> </div>
+            <p className="text-sm mt-5 text-zinc-400">Tip: Type 1k, 12.5k, 1M, 2.3M for quick input</p>
           </div>
         </div>
 
          <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
           <div>
             <div className="flex items-center gap-1"><Globe size={18} color="#FF0000"/> <p className="text-zinc-400 text-sm">TARGET COUNTRY</p></div>   
-            <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700"><input  type="text" className="border-primary outline-0 text-sm"  placeholder="100,000"/> <ChevronDown size={18} /> </div>
+            <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700"><input  type="text" className="border-primary outline-0 text-sm p-2"  placeholder="100,000"/> <ChevronDown size={18} /> </div>
           </div>
         </div>
 
          <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
           <div>
             <div className="flex items-center gap-1"><LayoutGrid size={18} color="#FF0000"/> <p className="text-zinc-400 text-sm">CONTENT CATEGORY</p></div>   
-            <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700"><input  type="text" className="border-primary outline-0 text-sm"  placeholder="100,000"/> <ChevronDown size={18} /> </div>
+            <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700"><input  type="text" className="border-primary outline-0 text-sm p-2"  placeholder="100,000"/> <ChevronDown size={18} /> </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 function Test() {
   return (
-    <div>
+    <div className="mt-26 mb-25">
       <h1>hi there</h1>
     </div>
   );

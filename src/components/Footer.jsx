@@ -13,7 +13,7 @@ function Footer() {
           <div>
             <img src={logo} alt="Vieworat" className="w-32 h-auto" />
 
-            <p className="text-gray-400 text-sm leading-6 max-w-xs">
+            <p className="text-gray-400 mt-2 text-sm leading-6 max-w-xs">
               Powerful tools and insights for creators to understand, grow, and
               monetize their content.
             </p>
