@@ -71,30 +71,12 @@ function FinalCTA() {
               smarter decisions with Viewora.
             </p>
 
-            <button className="
-              mt-10
-              inline-flex
-              items-center
-              gap-3
-              rounded-lg
-              bg-primary
-              px-8
-              py-4
-              text-lg
-              font-semibold
-              text-white
-              shadow-lg
-              shadow-primary/20
-              transition-all
-              duration-300
-              hover:bg-primary/90
-              cursor-pointer
-              hover:shadow-primary/30
-            ">
-              Start Free Analysis
-              <span className="text-xl">→</span>
+            <button className="mt-5 cursor-pointer group inline-flex items-center justify-center gap-3 rounded-md bg-primary px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20">
+             Start Free Analysis
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1.5">
+                →
+              </span>
             </button>
-
             <p className="mt-5 text-sm text-slate-500">
               Free to start. No credit card required.
             </p>

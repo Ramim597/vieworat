@@ -1,4 +1,5 @@
 import logo from "../assets/logo.jpg";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#05070d] border-t border-red-500/20">
@@ -50,12 +51,12 @@ function Footer() {
 
             <ul className="space-y-4">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="youtube-money-calculator"
                   className="text-gray-400 hover:text-red-500 transition"
                 >
                   YouTube Money Calculator
-                </a>
+                </Link>
               </li>
 
               <li>

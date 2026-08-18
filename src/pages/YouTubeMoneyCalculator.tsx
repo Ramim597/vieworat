@@ -4,7 +4,7 @@ import { SiYoutubeshorts } from "react-icons/si";
 
 function YouTubeMoneyCalculator() {
   return (
-    <>
+    <div className="mt-26 mb-25">
       <title>youtube-money-calculator</title>
 
       {/* toll bar */}
@@ -65,7 +65,7 @@ function YouTubeMoneyCalculator() {
           </div>
         </div>
      </div>
-    </>
+    </div>
   )
 }
 
