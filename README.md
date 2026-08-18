@@ -11,7 +11,7 @@ The project is currently **under active development**. Some features are already
 ## Preview
 
 ![Viewora Preview]!
-[alt text](image.png)
+[alt text](./src/assets/VieworatPreview.png)
 
 ---
 
