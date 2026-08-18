@@ -1,8 +1,8 @@
-# Viewora
+# vieworat
 
 > Creator tools and AI-powered insights built to help creators understand, grow, and monetize their content.
 
-Viewora is an all-in-one creator platform designed to provide useful tools, analytics, AI assistance, and insights for content creators.
+vieworat is an all-in-one creator platform designed to provide useful tools, analytics, AI assistance, and insights for content creators.
 
 The project is currently **under active development**. Some features are already available, while many others are planned for future releases.
 
@@ -10,12 +10,12 @@ The project is currently **under active development**. Some features are already
 
 ## Preview
 
-![Viewora Preview]!
-[alt text](./src/assets/VieworatPreview.png)
+![vieworat Preview]!
+[alt text](./src/assets/vieworattPreview.png)
 
 ---
 
-## What is Viewora?
+## What is vieworat?
 
 Creators often need to use multiple websites for things like:
 
@@ -27,7 +27,7 @@ Creators often need to use multiple websites for things like:
 - Comparing platforms
 - Improving content with AI
 
-Viewora aims to bring these tools together into one simple platform.
+vieworat aims to bring these tools together into one simple platform.
 
 ---
 
@@ -79,7 +79,7 @@ Viewora aims to bring these tools together into one simple platform.
 
 🚧 **In Development**
 
-Viewora is currently being built and improved.
+vieworat is currently being built and improved.
 
 Some parts of the UI and functionality are already implemented, while other features shown in the design are planned for upcoming releases.
 
@@ -111,7 +111,7 @@ Some parts of the UI and functionality are already implemented, while other feat
 ## Project Structure
 
 ```text
-viewora/
+vieworat/
 │
 ├── src/
 │   ├── components/
