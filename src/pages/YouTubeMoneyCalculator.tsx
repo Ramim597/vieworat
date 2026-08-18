@@ -1,5 +1,6 @@
 import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
 import { Eye, Globe, LayoutGrid, ArrowRight, ChevronDown , DollarSign} from "lucide-react";
+import CountrySelect from "../components/CountrySelect"
 import { SiYoutubeshorts } from "react-icons/si";
 
 function YouTubeMoneyCalculator() {
@@ -35,7 +36,7 @@ function YouTubeMoneyCalculator() {
          <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
           <div>
             <div className="flex items-center gap-1"><Globe size={18} color="#FF0000"/> <p className="text-zinc-400 text-sm">TARGET COUNTRY</p></div>   
-            <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700"><input  type="text" className="border-primary outline-0 text-sm p-2"  placeholder="100,000"/> <ChevronDown size={18} /> </div>
+            <div><CountrySelect /></div>
           </div>
         </div>
 

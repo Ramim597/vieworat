@@ -1,7 +1,7 @@
 function Test() {
   return (
-    <div className="mt-26 mb-25">
-      <h1>hi there</h1>
+    <div>
+      <h1> hi ther</h1>
     </div>
   );
 }
