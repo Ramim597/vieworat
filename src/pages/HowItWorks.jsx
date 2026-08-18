@@ -21,7 +21,7 @@ function HowItWorks() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#0b0f1a] py-24 lg:py-32">
+    <section id="how-it-works" className="relative overflow-hidden bg-[#0b0f1a] py-24 lg:py-32">
       {/* Red glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-75 rounded-full bg-red-600/10 blur-[140px] pointer-events-none" />
 

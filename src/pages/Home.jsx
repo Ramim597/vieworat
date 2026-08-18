@@ -3,6 +3,7 @@ import { CirclePlay } from "lucide-react";
 import SupportedPlatforms from "./SupportedPlatforms";
 import FeaturesSection from "./FeaturesSection";
 import HowItWorks from "./HowItWorks";
+import FinalCTA from "./FinalCTA";
 
 function Home() {
   return (
@@ -38,7 +39,7 @@ function Home() {
             </button>
 
             <a
-              href="#"
+              href="#how-it-works"
               className="flex items-center justify-center w-48 h-10 border gap-2 rounded border-primary"
             >
               <CirclePlay size={23} strokeWidth={2} /> See How It Works
@@ -60,6 +61,11 @@ function Home() {
       {/* How it works */}
       <div>
         <HowItWorks />
+      </div>
+
+      {/* Final call to action Btn */}
+      <div>
+        <FinalCTA />
       </div>
     </>
   );

@@ -2,6 +2,10 @@
 
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-primary: #ff2d2d;
   --font-primary: "Inter", sans-serif;
