@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 import { pricingPlans } from "../data/pricingPlans";
 function PricingCard() {
   return (
-    <>
+    <div className="mt-26 mb-25">
       <h1 className="font-extrabold text-5xl text-center mt-10">
         Simple pricing for modern <span className="text-primary">creators</span>
       </h1>
@@ -43,7 +43,7 @@ function PricingCard() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

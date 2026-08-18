@@ -35,7 +35,6 @@ export const pricingPlans = [
       "No watermarks",
       "Advanced Creator Insights",
       "A/B Title Testing",
-      "Priority support",
     ],
   },
 
