@@ -34,13 +34,13 @@ function Home() {
 
           {/* buttons */}
           <div className="mt-20 flex items-center justify-between">
-            <button className="primary-button w-40 h-9">
+            <button className="inline-flex items-center cursor-pointer justify-center gap-3 rounded-md bg-primary px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20">
               Start Free Analysis
             </button>
 
             <a
               href="#how-it-works"
-              className="flex items-center justify-center w-48 h-10 border gap-2 rounded border-primary"
+              className="inline-flex items-center justify-center gap-3 rounded-md border border-primary bg-transparent px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10"
             >
               <CirclePlay size={23} strokeWidth={2} /> See How It Works
             </a>
