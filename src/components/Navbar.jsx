@@ -7,7 +7,7 @@ const navigationLinks = [
   { href: "#community", label: "Community" },
 ];
 
-const linkStyles = "text-sm font-medium text-white/70 transition-colors duration-150 hover:text-white";
+const linkStyles = "text-sm font-medium text-white/70 transition-colors duration-150 hover:text-red-500";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +32,7 @@ function Navbar() {
 
       <button
         type="button"
-        className="ml-auto inline-flex size-10 items-center justify-center rounded-lg text-white transition-colors hover:bg-white/10 lg:hidden"
+        className="ml-auto inline-flex size-10 items-center justify-center rounded-lg text-white transition-colors hover:text-red-500 lg:hidden"
         aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
         aria-expanded={isMenuOpen}
         aria-controls="mobile-navigation"
@@ -47,9 +47,9 @@ function Navbar() {
       {isMenuOpen && (
         <nav id="mobile-navigation" className="absolute inset-x-0 top-full z-10 flex flex-col gap-1 border-t border-white/10 bg-[#050505] px-5 py-4 shadow-lg lg:hidden" aria-label="Mobile navigation">
           {navigationLinks.map(({ href, label }) => (
-            <a key={href} className="rounded-md px-3 py-3 text-sm font-medium text-white/70 transition-colors hover:bg-white/10 hover:text-white" href={href} onClick={closeMenu}>{label}</a>
+            <a key={href} className="rounded-md px-3 py-3 text-sm font-medium text-white/70 transition-colors hover:bg-white/10 hover:text-red-500" href={href} onClick={closeMenu}>{label}</a>
           ))}
-          <a className="rounded-md px-3 py-3 text-sm font-medium text-white/70 transition-colors hover:bg-white/10 hover:text-white" href="#sign-in" onClick={closeMenu}>Sign In</a>
+          <a className="rounded-md px-3 py-3 text-sm font-medium text-white/70 transition-colors hover:bg-white/10 hover:text-red-500" href="#sign-in" onClick={closeMenu}>Sign In</a>
           <a className="mt-2 rounded-full bg-[#ff2d2d] px-5 py-2.5 text-center text-sm font-medium shadow-[0_6px_20px_rgba(255,45,45,0.23)] transition duration-150 hover:bg-[#e92323]" href="#create-account" onClick={closeMenu}>Create Account</a>
         </nav>
       )}

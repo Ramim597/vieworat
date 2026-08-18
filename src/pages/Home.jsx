@@ -2,6 +2,7 @@ import ytIcon from "../assets/yt_icon.png";
 import { CirclePlay } from "lucide-react";
 import SupportedPlatforms from "./SupportedPlatforms";
 import FeaturesSection from "./FeaturesSection";
+import HowItWorks from "./HowItWorks";
 
 function Home() {
   return (
@@ -54,6 +55,11 @@ function Home() {
       {/* Features */}
       <div>
         <FeaturesSection />
+      </div>
+
+      {/* How it works */}
+      <div>
+        <HowItWorks />
       </div>
     </>
   );
