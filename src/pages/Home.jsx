@@ -1,4 +1,3 @@
-import ytIcon from "../assets/yt_icon.png";
 import { CirclePlay } from "lucide-react";
 import SupportedPlatforms from "./SupportedPlatforms";
 import FeaturesSection from "./FeaturesSection";
@@ -12,13 +11,12 @@ function Home() {
       <div className="fixed right-[-10%] top-[20%] w-64 h-64 sm:w-80 sm:h-80 sm:top-[22%] md:w-96 md:h-96 md:top-[24%] lg:w-[28rem] lg:h-[28rem] lg:top-[25%] bg-red-600/40 rounded-full blur-3xl pointer-events-none" />
 
       <div className="mt-25 flex items-center justify-center flex-col text-center">
-        <div className="p-3 h-8 flex gap-1.5 border border-red-400 rounded-[10px] font-medium shadow-2xl items-center justify-center text-primary">
-          <img
-            className="size-5"
-            src={ytIcon}
-            alt="YouTube logo: white play button on red circular background"
-          />
-          <p className="text-sm">BUILT FOR YOUTUBERS</p>
+        <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/5 px-4 py-2">
+          <span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_8px_#ff2d2d]" />
+
+          <span className="text-xs sm:text-sm font-semibold tracking-[0.18em] text-primary uppercase">
+            Built for YouTubers
+          </span>
         </div>
 
         {/* main section home */}
