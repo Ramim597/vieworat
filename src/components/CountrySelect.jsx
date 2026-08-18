@@ -11,7 +11,7 @@ function Test() {
     control: (base, state) => ({
       ...base,
       width: "370px",
-      backgroundColor: "#151A24",
+      backgroundColor: "#171717",
       border: state.isFocused ? "1px solid #ff2d2d" : "1px solid #374151",
       borderRadius: "8px",
       boxShadow: "none",
@@ -25,7 +25,7 @@ function Test() {
     menu: (base) => ({
       ...base,
       width: "370px",
-      backgroundColor: "#151A24",
+      backgroundColor: "#171717",
       border: "1px solid #374151",
       borderRadius: "8px",
       overflow: "hidden",
@@ -38,7 +38,7 @@ function Test() {
         ? "#ff2d2d"
         : state.isFocused
           ? "#252B38"
-          : "#151A24",
+          : "#171717",
       padding: "12px 14px",
       borderRadius: "6px",
       cursor: "pointer",
@@ -84,7 +84,7 @@ function Test() {
 
     menuList: (base) => ({
       ...base,
-      backgroundColor: "#151A24",
+      backgroundColor: "#171717",
       maxHeight: "300px",
 
       // Scrollbar
@@ -93,7 +93,7 @@ function Test() {
       },
 
       "&::-webkit-scrollbar-track": {
-        background: "#151A24",
+        background: "#171717",
       },
 
       "&::-webkit-scrollbar-thumb": {
