@@ -1,11 +1,19 @@
-import Select, { components } from "react-select";
-import { getData } from "country-list";
-function CountrySelect() {
-  const countries = getData().map((country) => ({
-    value: country.code,
-    label: country.name,
-    code: country.code,
-  }));
+import Select from "react-select";
+
+function ContentCategory() {
+  const categories = [
+    { value: "all", label: "All Categories" },
+    { value: "gaming", label: "Gaming" },
+    { value: "education", label: "Education" },
+    { value: "tech-ai", label: "Tech & AI" },
+    { value: "finance", label: "Finance" },
+    { value: "entertainment", label: "Entertainment" },
+    { value: "vlogs-lifestyle", label: "Vlogs & Lifestyle" },
+    { value: "music", label: "Music" },
+    { value: "shorts", label: "Shorts" },
+    { value: "kids-content", label: "Kids Content" },
+    { value: "news-commentary", label: "News & Commentary" },
+  ];
 
   const customStyle = {
     control: (base, state) => ({
@@ -107,30 +115,16 @@ function CountrySelect() {
     }),
   };
 
-  // customOption for country code
-
-  const CustomOption = (props) => (
-    <components.Option {...props}>
-      <div className="flex items-center gap-4">
-        <span className="w-8 font-medium text-slate-400">
-          {props.data.code}
-        </span>
-
-        <span>{props.data.label}</span>
-      </div>
-    </components.Option>
-  );
-
   return (
     <div className="mt-3 cursor-pointer">
       <Select
-        options={countries}
+        options={categories}
         styles={customStyle}
-        components={{ Option: CustomOption }}
-        placeholder="Select country..."
+        placeholder="Select category..."
+        isSearchable
       />
     </div>
   );
 }
 
-export default CountrySelect;
+export default ContentCategory;
