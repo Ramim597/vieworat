@@ -60,13 +60,7 @@ function YouTubeMoneyCalculator() {
           <div className="font-bold text-6xl">$0.00</div>
           <hr className="text-primary mt-2.5 w-md" />
           <p className="mt-2.5 text-gray-300">Potential earning based on your inputs.</p>
-
-          <div className="flex primary-button w-xl p-2 mt-2.5 justify-between items-center">
-            <button>
-              Calculate Earnings
-            </button>
-              <ArrowRight className="ml-88" size={22} />
-          </div>
+         <button className="w-full h-14 transition-all cursor-pointer duration-200 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 mt-6 flex items-center justify-center rounded-lg bg-primary text-white text-lg font-medium">Calculate Earnings</button>
         </div>
      </div>
     </div>
