@@ -1,9 +1,10 @@
-
+import PrimaryButton from "../components/PrimaryButton";
 
 function Test() {
   return (
     <div className="mt-26 mb-25">
-      <h1> hit  ther </h1>
+      <input type="text" className="border border-red-300 text-white" />
+      <PrimaryButton>Calculate</PrimaryButton>
     </div>
   );
 }
