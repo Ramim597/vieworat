@@ -1,7 +1,9 @@
+
+
 function Test() {
   return (
-    <div>
-      <h1> hi htere</h1>
+    <div className="mt-26 mb-25">
+      <h1> hit  ther </h1>
     </div>
   );
 }

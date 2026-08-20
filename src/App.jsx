@@ -23,7 +23,7 @@ function App() {
         <Route path="PricingCard" element={<PricingCard />} />
 
         {/* for practice  */}
-        <Route path="test" element={<Test> </Test>} />
+        <Route path="test" element={<Test />} />
       </Routes>
       <Footer />
     </main>

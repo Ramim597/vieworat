@@ -12,12 +12,29 @@ function YouTubeMoneyCalculator() {
       {/* toll bar */}
       <div className="flex items-center justify-center flex-col"> 
           <h1 className="font-bold text-5xl mt-3">YouTube Money <span className="text-primary">Calculator</span></h1>
-            <div className="flex gap-1.5 mt-6 border-zinc-700 p-3 border rounded-md group">
-              <div className="card group card hover:bg-primary/20 transition-colors duration-300"><FaYoutube size={20} color="#FF0000"/> <p>YouTube</p></div>
-              <div className="card group card hover:bg-primary/20 transition-colors duration-300"><SiYoutubeshorts size={20} color="#FF0000" /> <p>YT Shorts</p></div>
-              <div className="card group card hover:bg-primary/20 transition-colors duration-300"><FaInstagram size={20} color="#E4405F" /> <p>Instagram</p></div>
-              <div className="card group card hover:bg-primary/20 transition-colors duration-300"><FaFacebook size={20} color="#1877F2" /> <p>Facebook</p></div>
-          </div>
+           <div className="flex justify-center w-full px-4">
+          <div className="mt-17 w-full max-w-2xl border border-zinc-700/80 bg-zinc-950/80 p-2 rounded-2xl flex flex-wrap justify-center gap-2 shadow-lg">
+          <button className="flex-1 cursor-pointer min-w-32.5 flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary/10 text-primary border border-primary/40 transition-all duration-200 hover:bg-primary/20">
+            <FaYoutube size={20} />
+            YouTube
+          </button>
+
+          <button className="flex-1 cursor-pointer min-w-32.5 flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-zinc-300 border border-transparent transition-all duration-200 hover:bg-zinc-900 hover:text-primary">
+            <SiYoutubeshorts size={20} />
+            YT Shorts
+          </button>
+
+          <button className="flex-1 cursor-pointer min-w-32.5 flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-zinc-300 border border-transparent transition-all duration-200 hover:bg-pink-500/10 hover:text-pink-500 hover:border-pink-500/40">
+            <FaInstagram size={20} />
+            Instagram
+          </button>
+
+          <button className="flex-1 cursor-pointer min-w-32.5 flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-zinc-300 border border-transparent transition-all duration-200 hover:bg-blue-500/10 hover:text-blue-500 hover:border-blue-500/40">
+            <FaFacebook size={20} />
+            Facebook
+          </button>
+        </div>
+      </div>
       </div>
      
      {/* Calculator */}
@@ -27,7 +44,7 @@ function YouTubeMoneyCalculator() {
       <div className="flex items-center flex-col gap-4">
          <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
           <div>
-            <div className="flex items-center gap-1"><FaYoutube size={18} color="#FF0000"/> <p className="text-zinc-400 text-sm">TOTAL YOUTUBE LONG VIEWS</p>
+            <div className="flex items-center gap-1"> <p className="text-zinc-400 text-sm">TOTAL YOUTUBE LONG VIEWS</p>
             </div>   
             <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700"><input  type="text" className="border-primary outline-0 text-sm p-2"  placeholder="100,000"/> <Eye size={18} /> </div>
             <p className="text-sm mt-5 text-zinc-400">Tip: Type 1k, 12.5k, 1M, 2.3M for quick input</p>
