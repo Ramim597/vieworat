@@ -204,9 +204,12 @@ function Footer() {
           </p>
 
           <div className="flex items-center gap-6 text-sm">
-            <a href="#" className="text-gray-500 hover:text-red-500 transition">
+            <Link
+              to={"privacy-policy"}
+              className="text-gray-500 hover:text-red-500 transition"
+            >
               Privacy Policy
-            </a>
+            </Link>
 
             <a href="#" className="text-gray-500 hover:text-red-500 transition">
               Terms of Service
