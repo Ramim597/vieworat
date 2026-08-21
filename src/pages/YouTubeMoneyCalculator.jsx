@@ -70,14 +70,14 @@ function YouTubeMoneyCalculator() {
 
          <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
           <div>
-            <div className="flex items-center gap-1"><Globe size={18} color="#FF0000"/> <p className="text-zinc-400 text-sm">TARGET COUNTRY</p></div>   
+            <div className="flex items-center gap-1"><Globe size={20} color="#FF0000"/> <p className="text-zinc-400 text-sm">TARGET COUNTRY</p></div>   
             <div><CountrySelect /></div>
           </div>
         </div>
 
          <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
           <div>
-            <div className="flex items-center gap-1"><LayoutGrid size={18} color="#FF0000"/> <p className="text-zinc-400 text-sm">CONTENT CATEGORY</p></div>   
+            <div className="flex items-center gap-1"><LayoutGrid size={20} color="#FF0000"/> <p className="text-zinc-400 text-sm">CONTENT CATEGORY</p></div>   
             <div> <ContentCategory onChange={(option) => {
               setContentCategory(option.value)
             }}/> </div>
@@ -93,7 +93,7 @@ function YouTubeMoneyCalculator() {
           <div className="mt-2 text-gray-300">
             ESTIMATE EARNINGS
             </div>
-          <div className="font-bold text-6xl">${ earnings }</div>
+          <div className="font-bold text-6xl">${ earnings.toFixed(2) }</div>
           <hr className="text-primary mt-2.5 w-md" />
           <p className="mt-2.5 text-gray-300">Potential earning based on your inputs.</p>
          <button className="w-full h-14 transition-all cursor-pointer duration-200 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 mt-6 flex items-center justify-center rounded-lg bg-primary text-white text-lg font-medium" onClick={calcEarnings} >Calculate Earnings</button>
