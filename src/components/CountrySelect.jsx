@@ -1,6 +1,6 @@
 import Select, { components } from "react-select";
 import { getData } from "country-list";
-function CountrySelect() {
+function CountrySelect({ onChange, value }) {
   const countries = getData().map((country) => ({
     value: country.code,
     label: country.name,
@@ -124,6 +124,8 @@ function CountrySelect() {
   return (
     <div className="mt-3 cursor-pointer">
       <Select
+        value={countries.find((country) => country.value === value)}
+        onChange={onChange}
         options={countries}
         styles={customStyle}
         components={{ Option: CustomOption }}
