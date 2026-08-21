@@ -1,6 +1,6 @@
 import Select from "react-select";
 
-function ContentCategory({ onChange }) {
+function ContentCategory({ value, onChange }) {
   const categories = [
     { value: "all", label: "All Categories" },
     { value: "gaming", label: "Gaming" },
@@ -118,6 +118,7 @@ function ContentCategory({ onChange }) {
   return (
     <div className="mt-3 cursor-pointer">
       <Select
+        value={categories.find((category) => category.value === value)}
         onChange={onChange}
         options={categories}
         styles={customStyle}

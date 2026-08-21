@@ -7,7 +7,7 @@ import { useState } from "react";
 import { categoryMultipliers } from "../data/rpmData/categoryData";
 
 function YouTubeMoneyCalculator() {
-    const [views, setViews] = useState("100000");
+    const [views, setViews] = useState(100000);
     const [earnings, setEarnings] = useState(0);
     const [contentCategory, setContentCategory] = useState("all");
   
@@ -18,7 +18,7 @@ function YouTubeMoneyCalculator() {
     const finalRPM = baseRPM * categoryMultiplier;
   
     function calcEarnings() {
-      const earnings = (finalRPM * Number(views)) / 1000;
+      const earnings = (finalRPM * views) / 1000;
       setEarnings(earnings);
     }
   
@@ -78,7 +78,9 @@ function YouTubeMoneyCalculator() {
          <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
           <div>
             <div className="flex items-center gap-1"><LayoutGrid size={20} color="#FF0000"/> <p className="text-zinc-400 text-sm">CONTENT CATEGORY</p></div>   
-            <div> <ContentCategory onChange={(option) => {
+            <div> <ContentCategory 
+            value={contentCategory}
+            onChange={(option) => {
               setContentCategory(option.value)
             }}/> </div>
           </div>
