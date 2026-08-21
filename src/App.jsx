@@ -5,7 +5,7 @@ import YouTubeMoneyCalculator from "./pages/YouTubeMoneyCalculator";
 import PricingCard from "./pages/PricingCard";
 import Test from "./pages/Test";
 import Footer from "./components/Footer";
-// import SmarterSection from "./pages/SmarterSection";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           element={<YouTubeMoneyCalculator />}
         />
         <Route path="PricingCard" element={<PricingCard />} />
+        <Route path="privacy-policy" element={<PrivacyPolicy />} />
 
         {/* for practice  */}
         <Route path="test" element={<Test />} />
