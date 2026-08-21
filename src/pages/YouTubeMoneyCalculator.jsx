@@ -8,15 +8,14 @@ import { categoryMultipliers } from "../data/rpmData/categoryData";
 import { countryData } from "../data/rpmData/countryData";
 
 function YouTubeMoneyCalculator() {
-  const [views, setViews] = useState(100000);
-  const [selectedCountry, setSelectedCountry] = useState("US");
+  const [views, setViews] = useState(100_000);
+  const [selectedCountry, setSelectedCountry] = useState("AE");
   const [earnings, setEarnings] = useState(0);
   const [contentCategory, setContentCategory] = useState("all");
 
-  const countryRPM = countryData[selectedCountry]?.baseRPM;// country rpm used as base RPM
+  const countryRPM = countryData[selectedCountry]?.baseRPM; // country rpm used as base RPM
   const categoryMultiplier = categoryMultipliers[contentCategory];
   console.log(categoryMultiplier);
-
 
   function calcEarnings() {
     const finalRPM = countryRPM * categoryMultiplier;
@@ -134,7 +133,7 @@ function YouTubeMoneyCalculator() {
             />
           </div>
           <div className="mt-2 text-gray-300">ESTIMATE EARNINGS</div>
-          <div className="font-bold text-6xl">${earnings.toFixed(2)}</div>
+          <div className="font-bold mt-4 text-6xl">${earnings.toFixed(2)}</div>
           <hr className="text-primary mt-2.5 w-md" />
           <p className="mt-2.5 text-gray-300">
             Potential earning based on your inputs.
