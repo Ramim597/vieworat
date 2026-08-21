@@ -211,9 +211,12 @@ function Footer() {
               Privacy Policy
             </Link>
 
-            <a href="#" className="text-gray-500 hover:text-red-500 transition">
+            <Link
+              to={"terms"}
+              className="text-gray-500 hover:text-red-500 transition"
+            >
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>
