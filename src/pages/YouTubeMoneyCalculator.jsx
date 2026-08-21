@@ -7,6 +7,7 @@ import { useState } from "react";
 import { categoryMultipliers } from "../data/rpmData/categoryData";
 import { countryData } from "../data/rpmData/countryData";
 import IntroFeatures from "../yt-money-calc-fronted/IntroFeatures";
+import CalculatorHowItWorks from "../yt-money-calc-fronted/CalculatorHowItWorks";
 
 function YouTubeMoneyCalculator() {
   const [views, setViews] = useState(100_000);
@@ -149,6 +150,7 @@ function YouTubeMoneyCalculator() {
       </div>
 
       <IntroFeatures />
+      <CalculatorHowItWorks />
     </div>
   );
 }
