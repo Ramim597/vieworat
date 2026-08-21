@@ -32,9 +32,12 @@ function CalculatorHowItWorks() {
             YouTube earnings.
           </p>
 
-          <button className="mt-10 cursor-pointer flex items-center gap-2 rounded-xl bg-[#fd2d2d] px-7 py-4 font-semibold text-white shadow-lg shadow-[#fd2d2d]/20 transition-all duration-300 hover:bg-[#e62626] hover:shadow-[#fd2d2d]/40">
+          <a
+            href="#calculator"
+            className="mt-10 inline-flex items-center gap-2 rounded-xl bg-[#fd2d2d] px-7 py-4 font-semibold text-white shadow-lg shadow-[#fd2d2d]/20 transition-all duration-300 hover:bg-[#e62626]"
+          >
             Calculate Your Earnings
-          </button>
+          </a>
         </div>
 
         {/* Right side */}

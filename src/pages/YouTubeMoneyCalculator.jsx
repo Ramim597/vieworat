@@ -8,6 +8,7 @@ import { categoryMultipliers } from "../data/rpmData/categoryData";
 import { countryData } from "../data/rpmData/countryData";
 import IntroFeatures from "../yt-money-calc-fronted/IntroFeatures";
 import CalculatorHowItWorks from "../yt-money-calc-fronted/CalculatorHowItWorks";
+import CalculatorFAQ from "../yt-money-calc-fronted/CalculatorFAQ";
 
 function YouTubeMoneyCalculator() {
   const [views, setViews] = useState(100_000);
@@ -27,7 +28,7 @@ function YouTubeMoneyCalculator() {
   }
 
   return (
-    <div className="mt-26 mb-25">
+    <div id="calculator" className="mt-26 mb-25">
       <title>youtube-money-calculator</title>
 
       {/* toll bar */}
@@ -67,7 +68,6 @@ function YouTubeMoneyCalculator() {
           <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
             <div>
               <div className="flex items-center gap-1">
-                
                 <p className="text-zinc-400 text-sm">
                   TOTAL YOUTUBE LONG VIEWS
                 </p>
@@ -114,7 +114,6 @@ function YouTubeMoneyCalculator() {
                 <p className="text-zinc-400 text-sm">CONTENT CATEGORY</p>
               </div>
               <div>
-                
                 <ContentCategory
                   value={contentCategory}
                   onChange={(option) => {
@@ -151,6 +150,7 @@ function YouTubeMoneyCalculator() {
 
       <IntroFeatures />
       <CalculatorHowItWorks />
+      <CalculatorFAQ />
     </div>
   );
 }
