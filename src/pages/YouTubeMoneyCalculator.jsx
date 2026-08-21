@@ -65,7 +65,7 @@ function YouTubeMoneyCalculator() {
           <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
             <div>
               <div className="flex items-center gap-1">
-                {" "}
+                
                 <p className="text-zinc-400 text-sm">
                   TOTAL YOUTUBE LONG VIEWS
                 </p>
@@ -79,8 +79,8 @@ function YouTubeMoneyCalculator() {
                   }}
                   className="border-primary outline-0 text-sm p-2"
                   placeholder="100,000"
-                />{" "}
-                <Eye size={20} className="mr-3" />{" "}
+                />
+                <Eye size={20} className="mr-3" />
               </div>
               <p className="text-sm mt-5 text-zinc-400">
                 Tip: Type 1k, 12.5k, 1M, 2.3M for quick input
@@ -91,7 +91,7 @@ function YouTubeMoneyCalculator() {
           <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
             <div>
               <div className="flex items-center gap-1">
-                <Globe size={20} color="#FF0000" />{" "}
+                <Globe size={20} color="#FF0000" />
                 <p className="text-zinc-400 text-sm">TARGET COUNTRY</p>
               </div>
               <div>
@@ -108,17 +108,17 @@ function YouTubeMoneyCalculator() {
           <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
             <div>
               <div className="flex items-center gap-1">
-                <LayoutGrid size={20} color="#FF0000" />{" "}
+                <LayoutGrid size={20} color="#FF0000" />
                 <p className="text-zinc-400 text-sm">CONTENT CATEGORY</p>
               </div>
               <div>
-                {" "}
+                
                 <ContentCategory
                   value={contentCategory}
                   onChange={(option) => {
                     setContentCategory(option.value);
                   }}
-                />{" "}
+                />
               </div>
             </div>
           </div>

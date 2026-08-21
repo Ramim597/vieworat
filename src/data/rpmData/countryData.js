@@ -187,7 +187,7 @@ export const countryData = {
   TF: { name: "French Southern Territories", baseRPM: null },
   UG: { name: "Uganda", baseRPM: 0.25 },
   UA: { name: "Ukraine", baseRPM: 0.21 },
-  AE: { name: "United Arab Emirates", baseRPM: 0.33 },
+  AE: { name: "United Arab Emirates", baseRPM: 2.24 },
   GB: { name: "United Kingdom", baseRPM: 7.12 },
   US: { name: "United States", baseRPM: 10.81 },
   UY: { name: "Uruguay", baseRPM: 1.7 },
