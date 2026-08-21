@@ -6,6 +6,7 @@ import PricingCard from "./pages/PricingCard";
 import Test from "./pages/Test";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         />
         <Route path="PricingCard" element={<PricingCard />} />
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
-
+        <Route path="terms" element={<TermsOfService />} />
+        
         {/* for practice  */}
         <Route path="test" element={<Test />} />
       </Routes>
