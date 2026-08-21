@@ -1,10 +1,27 @@
 import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
-import { Eye, Globe, LayoutGrid, ArrowRight, ChevronDown , DollarSign} from "lucide-react";
+import { Eye, Globe, LayoutGrid, DollarSign} from "lucide-react";
 import CountrySelect from "../components/CountrySelect"
 import { SiYoutubeshorts } from "react-icons/si";
 import ContentCategory from "../components/ContentCategory";
+import { useState } from "react";
+import { categoryMultipliers } from "../data/rpmData/categoryData";
 
 function YouTubeMoneyCalculator() {
+    const [views, setViews] = useState("100000");
+    const [earnings, setEarnings] = useState(0);
+    const [contentCategory, setContentCategory] = useState("all");
+  
+    const baseRPM = 7.50; // country rpm used as base RPM
+    const categoryMultiplier = categoryMultipliers[contentCategory];
+    console.log(categoryMultiplier);
+  
+    const finalRPM = baseRPM * categoryMultiplier;
+  
+    function calcEarnings() {
+      const earnings = (finalRPM * Number(views)) / 1000;
+      setEarnings(earnings);
+    }
+  
   return (
     <div className="mt-26 mb-25">
       <title>youtube-money-calculator</title>
@@ -46,7 +63,7 @@ function YouTubeMoneyCalculator() {
           <div>
             <div className="flex items-center gap-1"> <p className="text-zinc-400 text-sm">TOTAL YOUTUBE LONG VIEWS</p>
             </div>   
-            <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700"><input  type="text" className="border-primary outline-0 text-sm p-2"  placeholder="100,000"/> <Eye size={18} /> </div>
+            <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700"><input  type="text" value={views} onChange={(e) => {setViews(e.target.value)}} className="border-primary outline-0 text-sm p-2"  placeholder="100,000"/> <Eye size={20} className="mr-3" /> </div>
             <p className="text-sm mt-5 text-zinc-400">Tip: Type 1k, 12.5k, 1M, 2.3M for quick input</p>
           </div>
         </div>
@@ -61,7 +78,9 @@ function YouTubeMoneyCalculator() {
          <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
           <div>
             <div className="flex items-center gap-1"><LayoutGrid size={18} color="#FF0000"/> <p className="text-zinc-400 text-sm">CONTENT CATEGORY</p></div>   
-            <div> <ContentCategory /> </div>
+            <div> <ContentCategory onChange={(option) => {
+              setContentCategory(option.value)
+            }}/> </div>
           </div>
         </div>
       </div>
@@ -74,10 +93,10 @@ function YouTubeMoneyCalculator() {
           <div className="mt-2 text-gray-300">
             ESTIMATE EARNINGS
             </div>
-          <div className="font-bold text-6xl">$0.00</div>
+          <div className="font-bold text-6xl">${ earnings }</div>
           <hr className="text-primary mt-2.5 w-md" />
           <p className="mt-2.5 text-gray-300">Potential earning based on your inputs.</p>
-         <button className="w-full h-14 transition-all cursor-pointer duration-200 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 mt-6 flex items-center justify-center rounded-lg bg-primary text-white text-lg font-medium">Calculate Earnings</button>
+         <button className="w-full h-14 transition-all cursor-pointer duration-200 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 mt-6 flex items-center justify-center rounded-lg bg-primary text-white text-lg font-medium" onClick={calcEarnings} >Calculate Earnings</button>
         </div>
      </div>
     </div>

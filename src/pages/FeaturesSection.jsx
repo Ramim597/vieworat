@@ -1,6 +1,5 @@
 import { features } from "../data/featureSection";
 
-
 function FeaturesSection() {
   return (
     <section className="w-full bg-[#080b14] px-4 py-24 sm:px-6 lg:px-8">
@@ -59,31 +58,3 @@ function FeaturesSection() {
 
 export default FeaturesSection;
 
-// import multplatform from "../assets/Home/channel_rank.jpg";
-// import analyze_creator_earnings from "../assets/Home/analyze_creator_earnings.jpg";
-// import video_summarizer from "../assets/Home/video_summarizer.jpg";
-// import channel_rank from "../assets/Home/channel_rank.jpg";
-// function FeaturesSection() {
-//   return (
-//     <>
-//       <h1 className="mt-6 text-[40px] text-center font-bold">
-//         Everything you need to
-//         <span className="text-primary"> grow smarter</span>
-//       </h1>
-//       <p className="mt-4 text-xl text-center text-gray-400">
-//         Powerful tools built for creators who value data over guesswork.
-//       </p>
-//       <div>
-//         <a href="#">
-//           <img
-//             src={multplatform}
-//             className="w-[400px] h-[300px] rounded-2xl cursor-pointer"
-//             alt="multiplatfrom_image"
-//           />
-//         </a>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default FeaturesSection;
