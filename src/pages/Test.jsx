@@ -1,56 +1,31 @@
+import { Eye } from "lucide-react";
 import { useState } from "react";
-import ContentCategory from "../components/ContentCategory";
-import PrimaryButton from "../components/PrimaryButton";
-import { countryData } from "../data/rpmData/countryData";
-import { categoryMultipliers } from "../data/rpmData/categoryData";
-import CountrySelect from "../components/CountrySelect";
-
-// import { categoryData } from "../data/rpmData/categoryData";
-
 function Test() {
-  const [views, setViews] = useState("100000");
-  const [selectedCountry, setSelectedCountry] = useState("US");
-  const [earnings, setEarnings] = useState(0);
-  const [contentCategory, setContentCategory] = useState("all");
-
-  let countryRPM = countryData[selectedCountry]?.baseRPM;
-  console.log(countryRPM);
-
-  const categoryMultiplier = categoryMultipliers[contentCategory];
-
-  function calcEarnings() {
-    const finalRPM = countryRPM * categoryMultiplier;
-    const earnings = (finalRPM * Number(views)) / 1000;
-
-    setEarnings(earnings);
-  }
-
+  const [views, setViews] = useState(100_000);
   return (
-    <div className="mt-26 mb-25 text-center space-y-2.5">
-      <ContentCategory
-        onChange={(option) => {
-          setContentCategory(option.value);
-        }}
-      />
-      <input
-        value={views}
-        onChange={(e) => {
-          setViews(e.target.value);
-        }}
-        type="text"
-        className="border border-red-300 text-white"
-      />
-      <p> total views : {views} </p>
-      <p>Selected country : {countryRPM} </p>
-
-      <PrimaryButton onClick={calcEarnings}>Calculate</PrimaryButton>
-      <h1 className="text-3xl"> estimate earing: $ {earnings.toFixed(2)} </h1>
-      <CountrySelect
-        onChange={(option) => {
-          setSelectedCountry(option.value);
-          console.log(option.value);
-        }}
-      />
+    <div className="mt-26 mb-25">
+      <div className="left-div bg-[#171717] w-100 p-3 rounded-md border border-zinc-700">
+        <div>
+          <div className="flex items-center gap-1">
+            <p className="text-zinc-400 text-sm">TOTAL YOUTUBE LONG VIEWS</p>
+          </div>
+          <div className="flex items-center justify-between border mt-2 p-1 rounded-md border-zinc-700">
+            <input
+              type="text"
+              value={views}
+              onChange={(e) => {
+                setViews(e.target.value);
+              }}
+              className="border-primary outline-0 text-sm p-2"
+              placeholder="100,000"
+            />
+            <Eye size={20} className="mr-3" />
+          </div>
+          <p className="text-sm mt-5 text-zinc-400">
+            Tip: Type 1k, 12.5k, 1M, 2.3M for quick input
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
